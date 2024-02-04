@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle" id="circle1">
+
+            </div>
+            <div class="cardContainer">
+                <img src="myimg.png" alt="">
+                <h1>UTTAM MISHRA</h1>
+                <h2>Aspiring Developer</h2>
+                <div class="buttons">
+                    <button id="Share"><i class="fa fa-share" aria-hidden="true"></i> <span>Share My Profile</span></button>
+                    <button onclick="openModal()"   id="Follow"><i class="fa fa-link" aria-hidden="true"></i><span> Follow ME</span></button>
+                </div>
+                <div></div>
+            </div>
+            <div class="circle" id="circle2">
+            </div>
+            <!-- Modal Component -->
+        <div class="modal clickFollow">
+            <div class="headOfFollow">
+            <h1>Connect Me</h1>
+            <div class="cancel" onclick="closeModal()">
+                <i class="fa-solid fa-xmark close"></i>
+            </div>
+            </div>
+            <div>
+                <div class="icon-container">
+                   
+                    <a href="https://twitter.com/Uttam_Mishra_" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Uttam8448" class="icon" id="github">
+                    <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/uttam-mishra-24a669226" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/uttam.mishra.1428921?sfnsn=wiwspwa&mibextid=RUbZ1f" class="icon" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    <a href="https://www.instagram.com/uttam__mishra?igsh=MWxmMzBuNTdtcG1wMQ==" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
