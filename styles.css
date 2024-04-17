@@ -88,6 +88,7 @@ h2{
 img{
     width: 150px;
     border-radius: 50%;
+    loading:eager;
     border: 3px solid #ffffff30 ;
 }
 button{
